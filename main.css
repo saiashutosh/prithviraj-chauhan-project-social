@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&family=Ubuntu&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	scroll-behaviour: smooth;
+}
+
+nav {
+	background-color: black;
+	display: flex;
+	align-items: center;
+}
+
+.imgContainer {
+	margin: 10px;
+}
+
+#img1 {
+	width: 5vw;
+	height: 5vw;
+	border-radius: 100%;
+	border: 7px solid cyan;
+}
+
+nav ul {
+	display: flex;
+	padding: 0 10px;
+}
+
+nav ul li {
+	list-style-type:none;
+	padding: 0 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	font-family:'Philosopher';
+	transition: 0.6s ease;
+}
+
+nav ul li a:hover {
+	color: yellow;
+}
+
+.firstSection {
+	background-image: linear-gradient(to right, #009fff, #ec2f4b);
+	height: 85.9vh;
+}
+
+.box-main {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 19vh;
+}
+
+#p1 {
+	font-size: 35px;
+	font-family: 'Philosopher';
+	color: midnightblue;
+}
+
+#p2 {
+	font-size: 30px;
+	padding-top: 10px;
+	font-family: 'Ubuntu';
+}
+
+.doha {
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.doha pre {
+	font-family: 'Philosopher';
+}
+
+.section {
+	padding: 10px 20px;
+}
+
+.h1 {
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Philosopher';
+	color: midnightblue;
+}
+
+.p {
+	font-size: 20px;
+	font-family: 'Ubuntu';
+}
+
+.imgs {
+	width: 15vw;
+	height: 15vw;
+}
+
+.imgItemContainer1, .imgItemContainer2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgItem {
+	background-image: linear-gradient(to right, #009fff, #ec2f4b);
+	width: 20vw;
+	height: 20vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	padding: 20px;
+	margin: 20px;
+	border: 5px solid midnightblue;
+}
+
+.caption {
+	padding-top: 10px;
+	font-size: 20px;
+	font-family: 'Philosopher';
+	color: midnightblue;
+}
+
+footer {
+	background-color: midnightblue;
+}
+
+#footer {
+	color: cyan;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Ubuntu';
+}
+
+@media only screen and (max-width: 1012px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	ul {
+		text-align: center;
+		flex-direction: column;
+	}
+	.container {
+		display: inline-block;
+		background-color: black;
+		width: 40px;
+	}
+	.bar1, .bar2, .bar3 {
+		background-color: white;
+		text-align: center;
+	}
+	.box-main {
+		flex-direction: column;
+	}
+	.doha {
+		display: none;
+	}
+	.imgItemContainer1 {
+		flex-direction: column;
+	}
+	.imgItemContainer2 {
+		flex-direction: column;
+	}
+	.imgItem {
+		margin-top: 10px;
+	}
+	#img1 {
+		border: none;
+		height: 15vw;
+		width: 15vw;
+	}
+	.firstHalf {
+		text-align: center;
+	}
+	.imgItem {
+		text-align: center;
+	}
+}
